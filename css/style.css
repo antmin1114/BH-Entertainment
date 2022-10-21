@@ -1,0 +1,1448 @@
+@charset "utf-8";
+
+#wrap {
+
+    background-color: #222;
+
+}
+
+.banner .container {
+
+    padding: 0 130px;
+    position: relative;
+    height: 100vh;
+
+}
+
+/* .banner .header-area {
+
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    
+} */
+
+.banner .logo {
+
+    width: 100px;
+
+}
+
+.banner .main-menu {
+
+    width: 1047px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-menu li {
+
+    font-size: 1.75rem;
+    font-weight: 600;
+
+}
+
+.banner .language {
+
+    width: 42px;
+    height: 42px;
+
+}
+
+.banner .content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+
+}
+
+.content .main .title-top {
+
+    display: inline-block;
+    /* border-bottom: 23px solid #f34845; */
+    /* font-weight: 700; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.content .main .title-bot {
+
+    margin-bottom: 50px;
+
+}
+
+.content .main span {
+
+    font-size: 2.625rem;
+
+}
+
+.content .sub .aid-writing {
+
+    color: #D1ED5D;
+
+}
+
+.banner .sns-icon {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 624px;
+    margin-top: 100px;
+
+}
+
+.banner .sns-icon a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.banner .sns-icon a::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+
+}
+
+.banner .sns-icon a:hover::before {
+
+    height: 100%;
+
+}
+
+.banner .sns-icon a:hover svg {
+
+    transform: rotateY(360deg);
+
+}
+
+.banner .sns-icon a:hover svg path {
+
+    fill: #fff;
+
+}
+
+.banner .sns-icon svg {
+
+    width: 24px;
+    height: 24px;
+    transition: 0.5s;
+
+}
+
+.banner .sns-icon svg path {
+
+    fill: #222;
+
+}
+
+.sns-icon a:nth-child(1):before {
+
+    background-color: #e4405f;
+
+}
+
+.sns-icon a:nth-child(2):before {
+
+    background-color: #1EC800;
+
+}
+
+.sns-icon a:nth-child(3):before {
+
+    background-color: #c4302b;
+
+}
+
+.sns-icon a:nth-child(4):before {
+
+    background-color: #3b5999;
+
+}
+
+.sns-icon a:nth-child(5):before {
+
+    background-color: #d21c1c;
+
+}
+
+/* 가로스크롤 */
+.section1 {
+
+    height: 3800px;
+    overflow: hidden;
+    background-color: #222;
+    position: relative;
+
+}
+
+.horizontal-container {
+
+    padding: 150px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.section1 .header-area {
+
+    /* display: none; */
+    /* opacity: 0; */
+}
+
+.banner .header-area {
+
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    transition: 0.5s;
+    opacity: 1;
+
+    /* display: none; */
+}
+
+.banner .header-area .logo {
+
+    width: 80px;
+
+}
+
+.banner .hamburger .txt {
+
+    font-size: 2rem;
+    color: #fff;
+    /* font-weight: 600; */
+
+}
+
+.header-area .hamburger {
+
+    position: relative;
+    width: 165px;
+    height: 37px;
+    transition: 0.5s;
+
+}
+
+.header-area .hamburger a {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+.header-area .hamburger .txt.active {
+
+    color: #222;
+
+}
+
+.header-area .hamburger span {
+
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: #fff;
+
+}
+
+.header-area .hamburger span.active {
+
+    background-color: #222;
+
+}
+
+.header-area .hamburger span:nth-child(2) {
+
+    top: 50%;
+    right: 0;
+    width: 25px;
+
+}
+
+.header-area .hamburger span:nth-child(3) {
+
+    top: 90%;
+    right: 0;
+
+}
+
+.banner .hamburger-menu * {
+
+    color: #222;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.banner .hamburger-menu {
+
+    width: 365px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -365px;
+    z-index: 99;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 150px 100px;
+
+}
+
+.banner .hamburger-menu.active {
+
+    top: 0;
+    right: 0;
+
+}
+
+.hamburger-menu .sub-menu li {
+
+    padding-bottom: 30px;
+    opacity: 0.5;
+    transition: .3s;
+
+}
+
+.hamburger-menu .sub-menu li.active {
+
+    opacity: 1;
+
+}
+
+.hamburger-menu .sub-menu li:hover {
+
+    opacity: 1;
+
+}
+
+.hamburger-menu .language svg {
+
+    width: 42px;
+    height: 42px;
+
+}
+
+.hamburger-menu .language li:nth-child(n+2) {
+
+    opacity: 0.5;
+    transition: .3s;
+
+}
+
+.hamburger-menu .language li:nth-child(n+2).active {
+
+    opacity: 1;
+
+}
+
+.hamburger-menu .language li:nth-child(n+2):hover {
+
+    opacity: 1;
+
+}
+
+/* .sec-1.lbh {
+
+    position: relative;
+
+} */
+
+.sec-1 {
+
+    min-width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.sec-1 .name-box {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 20%;
+    transition: 1s;
+
+}
+
+.sec-1.gs .name-box,
+.sec-1.jw .name-box {
+
+    left: 27%;
+
+}
+
+.sec-1 .name-box .k-name {
+
+    font-size: 9.5rem;
+    font-family: 'Nanum_Gothic';
+    transition: 1s;
+
+}
+
+.sec-1 .name-box .e-name {
+
+    font-size: 5.125rem;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+
+}
+
+.sec-1 .name-box.active {
+
+    transform: translateX(109%) translateY(-186%);
+
+}
+
+.sec-1 .name-box.active .k-name {
+
+    opacity: 0;
+
+}
+
+/* 박보영 영어이름위치 */
+.sec-1:nth-child(2) .name-box.active .e-name {
+
+    transform: translate(-10%, 0%);
+
+}
+
+/* 고수 영어이름위치 */
+.sec-1:nth-child(3) .name-box.active .e-name {
+
+    transform: translate(78%, 0%);
+
+}
+
+/* 김고은 영어이름위치 */
+.sec-1:nth-child(4) .name-box.active .e-name {
+
+    transform: translate(34%, 0%);
+
+}
+
+/* 박해수 영어이름위치 */
+.sec-1:nth-child(5) .name-box.active .e-name {
+
+    transform: translate(1%, 0%);
+
+}
+
+/* 한가인 영어이름위치 */
+.sec-1:nth-child(6) .name-box.active .e-name {
+
+    transform: translate(35%, 0%);
+
+}
+
+/* 정우 영어이름위치 */
+.sec-1:nth-child(7) .name-box.active .e-name {
+
+    transform: translate(4%, 0%);
+
+}
+
+/* 한효주 영어이름위치 */
+.sec-1:nth-child(8) .name-box.active .e-name {
+
+    transform: translate(18%, 0%);
+
+}
+
+/* 영어이름 색깔 */
+.sec-1:nth-child(1) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #D1ED5D;
+
+}
+
+.sec-1:nth-child(2) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #DAAAFF;
+
+}
+
+.sec-1:nth-child(3) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #AAFFF5;
+
+}
+
+.sec-1:nth-child(4) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #FFAAF6;
+
+}
+
+.sec-1:nth-child(5) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #AABDFF;
+
+}
+
+.sec-1:nth-child(6) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #FF9C7C;
+
+}
+
+.sec-1:nth-child(7) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #A5FF7B;
+
+}
+
+.sec-1:nth-child(8) .name-box .e-name {
+
+    -webkit-text-stroke: 1px #FFAAAA;
+
+}
+
+.sec-1 .img-box {
+
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec-1 .img-box img {
+
+    width: 960px;
+    height: 640px;
+    transition: 1s;
+
+}
+
+/* 사진 조정 */
+
+.sec-1 .img-box.active img {
+
+    width: 640px;
+    object-position: center;
+
+}
+
+.sec-1:nth-child(1) .img-box.active img {
+
+    width: 640px;
+    object-position: left;
+
+}
+
+.sec-1:nth-child(2) .img-box.active img {
+
+    width: 640px;
+    object-position: -255px;
+
+}
+
+.sec-1:nth-child(8) .img-box.active img {
+
+    width: 640px;
+    object-position: -200px;
+
+}
+
+.sec-1 .sns-icon a {
+
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin: 30px 15px;
+
+}
+
+.sec-1:nth-child(1) .sns-icon a:hover {
+
+    transform: rotate(360deg);
+
+}
+
+.sec-1 .filmo {
+
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #222;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2rem;
+
+    /* position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+    transition: 1s;
+
+}
+
+.sec-1 .filmo.active {
+
+    /* width: 200px;
+    height: 100px;
+    writing-mode: horizontal-tb;
+    letter-spacing: 12px;
+    transform: translate(260%, -370%); */
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
+    width: 50px;
+    line-height: 50px;
+    -webkit-text-stroke: 1px #fff;
+
+}
+
+.sec-1:nth-child(-n+8) .filmo:hover {
+
+    background-color: #222;
+
+}
+
+.sec-1:nth-child(1) .filmo:hover {
+
+    -webkit-text-stroke: 1px #D1ED5D;
+
+}
+
+.sec-1:nth-child(2) .filmo:hover {
+
+    -webkit-text-stroke: 1px #DAAAFF;
+
+}
+
+.sec-1:nth-child(3) .filmo:hover {
+
+    -webkit-text-stroke: 1px #AAFFF5;
+
+}
+
+.sec-1:nth-child(4) .filmo:hover {
+
+    -webkit-text-stroke: 1px #FFAAF6;
+
+}
+
+.sec-1:nth-child(5) .filmo:hover {
+
+    -webkit-text-stroke: 1px #AABDFF;
+
+}
+
+.sec-1:nth-child(6) .filmo:hover {
+
+    -webkit-text-stroke: 1px #FF9C7C;
+
+}
+
+.sec-1:nth-child(7) .filmo:hover {
+
+    -webkit-text-stroke: 1px #A5FF7B;
+
+}
+
+.sec-1:nth-child(8) .filmo:hover {
+
+    -webkit-text-stroke: 1px #FFAAAA;
+
+}
+
+/* 필모 배경색 */
+.sec-1.lbh .filmo {
+
+    background-color: #D1ED5D;
+
+}
+
+/* .sec-1.lbh .filmo.active {
+
+    background-color: transparent;
+
+} */
+
+.sec-1.pby .filmo {
+
+    background-color: #DAAAFF;
+
+}
+
+.sec-1.gs .filmo {
+
+    background-color: #AAFFF5;
+
+}
+
+.sec-1.kge .filmo {
+
+    background-color: #FFAAF6;
+
+}
+
+.sec-1.phs .filmo {
+
+    background-color: #AABDFF;
+
+}
+
+.sec-1.hgi .filmo {
+
+    background-color: #FF9C7C;
+
+}
+
+.sec-1.jw .filmo {
+
+    background-color: #A5FF7B;
+
+}
+
+.sec-1.hhj .filmo {
+
+    background-color: #FFAAAA;
+
+}
+
+.filmo a {
+
+    color: #222;
+
+}
+
+/* 캔버스영역 */
+#canvas {
+
+    opacity: 0;
+    transition: 1s;
+
+}
+
+#canvas.active {
+
+    position: relative;
+    height: 100px;
+    perspective: 1500px;
+    opacity: 1;
+    /* 원근감을 나타내는 속성 사용시 translateX 의 차이를 느낄 수 있음*/
+    z-index: 999;
+    margin-left: -100px;
+
+}
+
+#rotation {
+
+    position: absolute;
+    top: -70%;
+    left: 45%;
+    transform-style: preserve-3d;
+    /* transform을 3d로 적용 */
+    animation: 돌려주기 30s linear infinite;
+    opacity: 0;
+
+}
+
+#canvas.active #rotation {
+
+    opacity: 1;
+
+}
+
+@keyframes 돌려주기 {
+    
+    from {
+
+        transform: rotateY(0);
+
+    }
+
+    to {
+
+        transform: rotateY(-360deg);
+
+    }
+
+}
+
+.face {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -100px;
+    transform-style: preserve-3d;
+    /* transform-style: preserve-3d;가 .face에 지정되어있을시 자식인 .cell이 3차원의 형태를 유지한다. */
+    /* x, y축은 2차원의 공간을 이루지만 3차원의 공간은 z축이 필요한데 z축으로 튀어나오게 해주려면 부모인 .face에게 transform-style: preserve-3d; 지정해서 자식들에게도 3차원의 스타일을 유지하게끔 만들어줘야함 */
+
+}
+
+.cell {
+
+    width: 175px;
+    height: 250px;
+    transition: 0.5s;
+
+}
+
+.cell:hover {
+
+    transform: scale(1.1 ) translateZ(50px);
+
+}
+
+/* .face 트랜스폼 속성 사용해서 위치값 변경시켜주기 */
+.face:nth-child(1) {
+
+    transform: rotateY(0) translate3d(0, 0, 370px);
+    /* translate3d(x축, y축, z축); */
+
+}
+
+.face:nth-child(2) {
+
+    transform: rotateY(36deg) translateZ(370px);
+
+}
+
+.face:nth-child(3) {
+
+    transform: rotateY(72deg) translateZ(370px);
+
+}
+
+.face:nth-child(4) {
+
+    transform: rotateY(108deg) translateZ(370px);
+
+}
+
+.face:nth-child(5) {
+
+    transform: rotateY(144deg) translateZ(370px);
+
+}
+
+.face:nth-child(6) {
+
+    transform: rotateY(180deg) translateZ(370px);
+
+}
+
+.face:nth-child(7) {
+
+    transform: rotateY(216deg) translateZ(370px);
+
+}
+
+.face:nth-child(8) {
+
+    transform: rotateY(252deg) translateZ(370px);
+
+}
+
+.face:nth-child(9) {
+
+    transform: rotateY(288deg) translateZ(370px);
+
+}
+
+.face:nth-child(10) {
+
+    transform: rotateY(324deg) translateZ(370px);
+
+}
+
+.section2 {
+
+    background: url(../img/단체사진.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.section2 .container {
+
+    padding: 50px 130px;
+    padding-top: 188px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.section2 .content-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.content-left .aid-writing {
+
+    color: #D1ED5D;
+    font-size: 6.375rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.content-left .sub .kakao {
+
+    font-size: 2rem;
+
+}
+
+.content-left .sub .copyright {
+
+    font-size: 1.125rem;
+    padding-top: 30px;
+
+}
+
+.section2 .content-right {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.content-right b {
+
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.content-right .about {
+
+    font-size: 1.125rem;
+    width: 841px;
+    line-height: 40px;
+    font-family: 'Nanum_Gothic';
+
+}
+
+.content-right .contact {
+
+    font-size: 1.125rem;
+    width: 841px;
+    line-height: 40px;
+    font-family: 'Nanum_Gothic';
+    padding-top: 100px;
+
+}
+
+.contact a {
+
+    text-decoration: underline;
+    color: #5DB9ED;
+
+}
+
+.content-right .map {
+
+    width: 846px;
+    height: 423px;
+    background: url(../img/map.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+
+}
+
+.content-right .map p {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 3.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+
+}
+
+.content-right .map:hover p{
+
+    opacity: 0;
+
+}
+
+/* 섹션3 */
+.section3 .container {
+
+    background-color: #222;
+
+}
+
+.section3 .gallery {
+
+    height: 70vh;
+    display: flex;
+
+}
+
+.section3 .gallery li {
+
+    flex: 1;
+    /* 브라우저 크기에 맞춰서 1의 비율로 너비값 조정해줌 */
+    /* 플렉스 박스의 유연한 레이아웃을 가능하게 하는 가장 중요한 속성 2가지가 flex-grow와 flex-shrink이다. */
+    /* 두속성의 flex-basis속성으로 정한 플렉스박스 아이템의 기본 너비를 자동으로 늘리거나(flex-grow) 줄어들도록(flex-shrink)해서 행안에 작성한 너비로 배치되도록 맞추는 기능을 말한다. */
+    border: 10px solid #f9f6ea;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-right: none;
+
+}
+/* 갤러리에 마우스 올리면 비율값이 커지도록 작성해주기 */
+.section3 .gallery li:hover {
+
+    flex: 2;
+    /* 필터속성 사용해서 호버되는 부분 흑백으로 처리 */
+    /* filter: grayscale(1); */
+
+}
+
+.section3 .gallery li:last-child {
+
+    border-right: 10px solid #f9f6ea;
+
+}
+
+.section3 .gallery .box1 {
+
+    background: url(../img/싱글라이더.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.section3 .gallery .box2 {
+
+    background: url(../img/승부.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.section3 .gallery .box3 {
+
+    background: url(../img/종이의집.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.section3 .gallery .box4 {
+
+    background: url(../img/콘크리트유토피아.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.section3 .content {
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    bottom: -350px;
+    transition: 0.5s;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section3 .content * {
+    
+    font-family: 'Nanum_Gothic';
+
+}
+
+.section3 .content h5 {
+
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #D1ED5D;
+
+}
+
+.section3 .content p:nth-of-type(1) {
+
+    width: 280px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    
+}
+
+.section3 .content p:nth-of-type(2) {
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    
+}
+
+.section3 li:hover .content{
+
+    background-color: rgba(34, 34, 34, 0.8);
+    opacity: 1;
+
+}
+
+.section4 .container {
+
+    padding: 200px 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.section4 .content-box {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 255px;
+    position: relative;
+
+}
+
+.section4 .content-box:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.content-box .img-box {
+
+    width: 650px;
+    height: 960px;
+    z-index: 9;
+
+}
+
+.content-box .txt-box {
+
+    width: 702px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 70px;
+
+}
+
+.content-box .txt-box .title {
+
+    font-size: 3.25rem;
+    color: #D1ED5D;
+    font-weight: 600;
+
+}
+
+.content-box .txt-box .content {
+
+    line-height: 50px;
+
+}
+
+.content-box .name-box {
+
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 7.625rem;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.content-box:nth-child(1) .name-box {
+
+    top: 45%;
+    left: 0%;
+    transform: rotate(-30deg);
+
+}
+
+.content-box:nth-child(2) .name-box {
+
+    top: 80%;
+    left: 41%;
+    transform: rotate(30deg);
+
+}
+
+.content-box:nth-child(3) .name-box {
+
+    top: 25%;
+    left: 23%;
+    transform: rotate(-30deg);
+    
+}
+
+/* 섹션5 audition */
+.section5 .container {
+
+    padding-top: 600px;
+    padding-bottom: 200px;
+    padding-bottom: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.section5 .card-box {
+
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section5 .card-box * {
+
+    font-family: 'Nanum_Gothic';
+
+}
+
+.section5 .card-box .title {
+
+    margin-bottom: 50px;
+
+}
+
+.section5 .card-box .title * {
+
+    color: #D1ED5D;
+    font-weight: 600;
+
+}
+
+.section5 .card-box .title span {   
+
+    display: inline-block;
+    background-color: #D1ED5D;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    font-size: 3.875rem;
+    color: #222;
+    text-align: center;
+    line-height: 125px;
+
+}
+
+.section5 .card-box .title h4 {
+
+    display: inline-block;
+    margin-left: 50px;
+
+}
+
+.section5 .card-box p {
+
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.section5 .card-box b {
+
+    font-weight: 600;
+    
+}
+
+.section5 .card-box.main .content {
+
+    width: 813px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.section5 .card-box.main span {
+
+    font-size: 2.625rem;
+    display: inline-block;
+
+}
+
+.section5 .card-box.support .tab-inner .btn,
+.section5 .card-box.support .tabs .menu {
+
+    width: 666px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tab-inner .btn {
+
+    font-size: 2rem;
+    margin-bottom: 30px;
+
+}
+
+.tab-inner .btn li.active {
+
+    border-bottom: 1px solid #fff;
+
+}
+
+.tabs > div {
+
+    display: none;
+
+}
+
+.tabs > div.active {
+
+    display: block;
+
+}
+
+.tabs .menu {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-box.support {
+
+    margin-top: 300px;
+
+}
+
+.card-box.support h4 {
+
+    font-weight: 600;
+    margin-bottom: 70px;
+
+}
+
+.card-box.support .tabs .menu ._title {
+
+    width: 140px;
+    height: 100px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+
+}
+
+.card-box.support .tabs .menu .content {
+
+    width: 406px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+
+}
+
+.tabs .menu .content a {
+
+    display: block;
+    background-color: #D1ED5D;
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+
+}
+
+.tabs #tab2 .menu.item3 p,
+.tabs #tab3 .menu.item1 p {
+
+    text-align: left;
+
+}
+
+.section5 .last-writing {
+
+    margin-top: 370px;
+    font-size: 1.5rem;
+
+}

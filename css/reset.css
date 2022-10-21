@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+@font-face {
+  
+    font-family: "Nanum_Gothic";
+    src: url(../font/Nanum_Gothic/NanumGothic-Regular.ttf);
+    font-weight: 400;
+
+}
+
+@font-face {
+
+    font-family: "Nanum_Gothic";
+    src: url(../font/Nanum_Gothic/NanumGothic-Bold.ttf);
+    font-weight: 700;
+
+}
+
+@font-face {
+
+    font-family: "Nanum_Gothic";
+    src: url(../font/Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+    font-weight: 800;
+
+}
+
+@font-face {
+
+    font-family: "Karla";
+    src: url(../font/Karla/static/Karla-Regular.ttf);
+    font-weight: 400;
+
+}
+
+@font-face {
+
+    font-family: "Karla";
+    src: url(../font/Karla/static/Karla-Medium.ttf);
+    font-weight: 500;
+
+}
+
+@font-face {
+
+    font-family: "Karla";
+    src: url(../font/Karla/static/Karla-SemiBold.ttf);
+    font-weight: 600;
+
+}
+
+@font-face {
+
+    font-family: "Karla";
+    src: url(../font/Karla/static/Karla-Bold.ttf);
+    font-weight: 700;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla';
+    font-weight: 400;
+    color: #fff;
+
+}
+
+ul,li,ol {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+img, svg {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+
+    font-size: 17.625rem;
+
+}
+
+h2 {
+
+    font-size: 7.625rem;
+
+}
+
+h3 {
+
+    font-size: 6.375rem;
+
+}
+
+h4 {
+
+    font-size: 3.875rem;
+
+}
+
+h5 {
+
+    font-size: 2rem;
+
+}
