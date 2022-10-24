@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    // AOS
+    AOS.init();
+
     // 햄버거버튼 누를 시
     $('.banner .header-area .hamburger').click(function(){
 
@@ -67,6 +70,7 @@ $(document).ready(function(){
         $(`.sec-1:nth-child(${dataAlt}) .img-box`).toggleClass('active');
         $(`.sec-1:nth-child(${dataAlt}) .name-box`).toggleClass('active');
         $(`.sec-1:nth-child(${dataAlt}) #canvas`).toggleClass('active');
+        $(`.sec-1:nth-child(${dataAlt}) #canvas_m`).toggleClass('active');
 
         console.log(dataAlt);
         
