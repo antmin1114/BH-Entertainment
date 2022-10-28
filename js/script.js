@@ -130,7 +130,7 @@ $(document).ready(function(){
 
         if (sct < sec1_sct) {
 
-            skrollr.init().destroy();
+            // skrollr.init().destroy();
             $('.banner .header-area').css('opacity', 1);
 
         } else if (sct >= sec1_sct && sct < sec2_sct  && ww > 1187) {
@@ -224,7 +224,7 @@ $(document).ready(function(){
         if ( ww < 1187 ) {
 
             // window.location.reload();
-            skrollr.init().destroy();
+            // skrollr.init().destroy();
             $('.horizontal-container').css({
 
                 display: 'block'

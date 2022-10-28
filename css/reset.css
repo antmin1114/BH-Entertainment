@@ -67,6 +67,12 @@
 
 }
 
+body {
+
+    overflow-x: hidden;
+
+}
+
 ul,li,ol {
 
     list-style: none;
