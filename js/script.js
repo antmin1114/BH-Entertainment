@@ -3,6 +3,10 @@ $(document).ready(function(){
     // AOS
     AOS.init();
 
+    var ww = $(window).width();
+    var sct = $(window).scrollTop();
+
+
     // 햄버거버튼 누를 시
     $('.banner .header-area .hamburger').click(function(){
 
@@ -61,6 +65,7 @@ $(document).ready(function(){
 
     });
 
+
     // 필모 클릭시 이벤트
     
     $('.sec-1 .filmo').click(function(){
@@ -76,11 +81,21 @@ $(document).ready(function(){
         
     });
 
+    $('.sec-1 .filmo_m').click(function(){
 
-    
+        const dataAlt = $(this).attr('data-alt');
+        // $(`.sec-1:nth-child(${dataAlt}) .filmo_m`).toggleClass('active');
+        // $(`.sec-1:nth-child(${dataAlt}) #canvas_m2`).toggleClass('active');
+        // $(`.sec-1:nth-child(${dataAlt}) #canvas_m2`).slideToggle();
+        // $(`.sec-1:nth-child(${dataAlt}) #canvas_m2`).css('display', 'flex');
+
+        console.log(dataAlt);
+        
+    });
+
     $(window).scroll(function(){
 
-        const sct = $(window).scrollTop();
+        var sct = $(window).scrollTop();
         const sec1_sct = $('.section1').offset().top;
         const sec2_sct = $('.section2').offset().top;
         const sec3_sct = $('.section3').offset().top;
@@ -118,7 +133,7 @@ $(document).ready(function(){
             skrollr.init().destroy();
             $('.banner .header-area').css('opacity', 1);
 
-        } else if (sct >= sec1_sct && sct < sec2_sct) {
+        } else if (sct >= sec1_sct && sct < sec2_sct  && ww > 1187) {
 
             skrollr.init();
             $('.horizontal-container').css({
@@ -128,6 +143,7 @@ $(document).ready(function(){
                 left: 0,
 
             });
+
             // $('.banner .header-area').css('backgroundColor', '');
             $('.banner .header-area').css('opacity', 1);
             $('.banner .header-area .hamburger').css('width', '165px');
@@ -155,8 +171,10 @@ $(document).ready(function(){
             $('.banner .header-area .hamburger .txt').text("AUDITION");
 
         } else {
-
-            $('.banner .header-area').css('opacity', 0);
+            
+            $('.banner .header-area .hamburger').css('width', '165px');
+            $('.banner .header-area .hamburger .txt').text("ARTIST");
+            $('.banner .header-area').css('opacity', 1);
 
         }
 
@@ -172,7 +190,6 @@ $(document).ready(function(){
         scrollNameLeft[0] = 3 / 55 * sct - 4020 / 11;
         scrollNameLeft[1] = -31 / 600 * sct + 444;
         scrollNameLeft[2] = 1 / 20 * sct - 427;
-
 
         function scrollCharity(index) {
 
@@ -191,21 +208,56 @@ $(document).ready(function(){
 
         }
 
+
+    // 윈도우 반응형 가로값
+
+        console.log(ww);
+
+        if ( ww <= 500 ) {
+
+            // const imgUrl = './img/banner-img_m.png';
+            // $('.b-img').attr('src', imgUrl);
+
+        } 
+
+        // 가로스크롤 파괴
+        if ( ww < 1187 ) {
+
+            // window.location.reload();
+            skrollr.init().destroy();
+            $('.horizontal-container').css({
+
+                display: 'block'
+
+            });
+
+        }
+
         // audition 스크롤이벤트
-        var auditionOpacity = [];
-        var auditionScale = [];
+        if ( ww >= 1800) {
+            var auditionOpacity = [];
+            var auditionScale = [];
 
-        auditionOpacity[0] = -1 / 500 * sct + 116 / 5;
-        auditionOpacity[1] = -1 / 500 * sct + 123 / 5;
-        auditionOpacity[2] = -1 / 500 * sct + 130 / 5;
-        auditionOpacity[3] = -1 / 500 * sct + 137 / 5;
-        auditionOpacity[4] = -1 / 500 * sct + 144 / 5;
+            auditionOpacity[0] = -1 / 500 * sct + 116 / 5;
+            auditionOpacity[1] = -1 / 500 * sct + 123 / 5;
+            auditionOpacity[2] = -1 / 500 * sct + 130 / 5;
+            auditionOpacity[3] = -1 / 500 * sct + 137 / 5;
+            auditionOpacity[4] = -1 / 500 * sct + 144 / 5;
 
-        auditionScale[0] = -3 / 5000 * sct + 383 / 50;
-        auditionScale[1] = -3 / 5000 * sct + 404 / 50;
-        auditionScale[2] = -3 / 5000 * sct + 425 / 50;
-        auditionScale[3] = -3 / 5000 * sct + 446 / 50;
-        auditionScale[4] = -3 / 5000 * sct + 467 / 50;
+            auditionScale[0] = -3 / 5000 * sct + 383 / 50;
+            auditionScale[1] = -3 / 5000 * sct + 404 / 50;
+            auditionScale[2] = -3 / 5000 * sct + 425 / 50;
+            auditionScale[3] = -3 / 5000 * sct + 446 / 50;
+            auditionScale[4] = -3 / 5000 * sct + 467 / 50;
+
+
+            for(var i = 0; i < auditionOpacity.length; i++) {
+                console.log('hi')
+                scrollAuditon(i);
+
+            }
+
+        }
 
         function scrollAuditon(index) {
 
@@ -217,13 +269,7 @@ $(document).ready(function(){
             });
 
         }
-
-        for(var i = 0; i < auditionOpacity.length; i++) {
-
-            scrollAuditon(i);
-
-        }
-
+        
     });
 
     $('.tab-inner .btn li').click(function(){
