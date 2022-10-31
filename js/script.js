@@ -13,7 +13,7 @@ $(document).ready(function(){
         $('.banner .hamburger-menu').toggleClass('active');
         $('.header-area .hamburger .txt').toggleClass('active');
         $('.header-area .hamburger a span').toggleClass('active');
-        // $(this).css('z-index', '9999');
+        $('.banner .header-area .logo').toggleClass('active');
 
     });
 
@@ -22,6 +22,15 @@ $(document).ready(function(){
     
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
+
+    });
+
+    // 맨위로 가기
+    $('.header-area .logo').click(function(){
+
+        $('html,body').animate({
+            scrollTop: 0
+        },400);
 
     });
 
@@ -130,10 +139,10 @@ $(document).ready(function(){
 
         if (sct < sec1_sct) {
 
-            // skrollr.init().destroy();
+            skrollr.init().destroy();
             $('.banner .header-area').css('opacity', 1);
 
-        } else if (sct >= sec1_sct && sct < sec2_sct  && ww > 1187) {
+        } else if (sct >= sec1_sct && sct < sec2_sct  && ww > 1533) {
 
             skrollr.init();
             $('.horizontal-container').css({
@@ -210,9 +219,6 @@ $(document).ready(function(){
 
 
     // 윈도우 반응형 가로값
-
-        console.log(ww);
-
         if ( ww <= 500 ) {
 
             // const imgUrl = './img/banner-img_m.png';
@@ -225,11 +231,11 @@ $(document).ready(function(){
 
             // window.location.reload();
             // skrollr.init().destroy();
-            $('.horizontal-container').css({
+            // $('.horizontal-container').css({
 
-                display: 'block'
+            //     display: 'block'
 
-            });
+            // });
 
         }
 
